@@ -8,7 +8,5 @@ Presents a bird's eye view of the operations and basic data-flows envisaged for 
 identified as well as the main building blocks of the system. We are using draw.io to maintain the [high-level flow diagram](https://www.draw.io/#HNMichas%2FOPP-6-WIS-Djibouti%2Fmaster%2Fdocs%2FOPP6-Flow-diagram.xml).
 
 An exported version of the diagram in PNG is available next (note, this is manually exported, so it may not reflect the latest version of the diagram):
-<img src="img/OPP6-Flow-diagram.png">
-
-![](img/OPP6-Flow-diagram.png)
+![](docs/img/OPP6-Flow-diagram.png)
 
