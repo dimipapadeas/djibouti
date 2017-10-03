@@ -20,6 +20,8 @@ A:
 2. Q: Do we want commercial search engines to also crawl AWC?  
 A:
 
+3. Q: Do we envisage a central, single AWC or multiple ones? e.g. AWC France, AWC UK, etc.
+A:
 
 ### Point 1 - Creation of CSVs
 
@@ -115,4 +117,7 @@ A:
 ### Point 15 - AWC real-time notifications
 
 1. Q: Is the central approach for real-time notifications the one we want for the PoC?  
+A:
+
+2. Q: Real-time notification are about the existance of data, or they disseminate the data itself as well?  
 A:
