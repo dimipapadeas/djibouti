@@ -17,6 +17,9 @@ An exported version of the diagram in PNG is available next (note, this is manua
 1. Q: Implementing security restrictions/checks will not be a target for the PoC. However, should we support some very basic user authentication? Regarding the calls in (P5) and (P6) we could have some basic, token-based authentication in place especially since (P14) will be deployed on public Internet.  
 A: 
 
+2. Q: Do we want commercial search engines to also crawl AWC?  
+A:
+
 
 ### Point 1 - Creation of CSVs
 
@@ -65,6 +68,8 @@ A:
 1. Q: Do we envisage anything more complicated than an HTTP/GET call?  
 A:
 
+2. Q: Alternatively, do we need this call or we rely on the Crawler identifying new data (and proceeding to sending notifications)?  
+A:
 
 ### Point 7 - Local web server
 
@@ -97,7 +102,7 @@ A:
 1. Q: Once we choose the search engine to use, we need to investigate how to query it according to our needs. Can you provide a few representative queries we would like to run?
 A:
 
-### Point 13 - AWC crawling local dissemination channels
+### Point 13 - AWC crawling local dissemination environments
 
 1. Q: Decide on the crawling mechanism as well as the underlying storage mechanism (this is directly related to the queries to be supported by (P14)).  
 A:
