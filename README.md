@@ -25,7 +25,7 @@ A:
 
 ### Point 1 - Creation of CSVs
 
-1. Q: Should the local WebApp (P11) provide a functionality to creates CSVs online?  
+1. Q: Should the local WebApp (P11) provide a functionality to create CSVs online?  
 A:
 
 2. Q: Do we care for the format/columns of the CSVs? Is there a standard to be used?  
