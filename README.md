@@ -139,12 +139,37 @@ The PoC has very specific focus and will be largely created as a throw-away prot
 
 #### The Local Dissemination Environment (LDE)
 
-##### Task 1: 
-Description:  
-Core technologies:
+##### Infrastructure
+Component | Task description | Core Technologies
+--|--|--
+Storage | Configuration of the required Storage on the target platform (permissions, space allocation) | Ubuntu/CentOS, shell scripting
+Web Server | Installation and configuration of the Web Server component, and its pre-requisites | Java, Maven, Karaf
 
+##### Implementation
+Component | Task description | Core Technologies
+--|--|--
+Sitemap | Creation of sitemap | XML
+Pages | Creation of static HTML content that will describe each dataset, as well as provide searchable metadata  | HTML, JSON-LD
+WebApp | Creation of the web-app that will handle data dissemination, CSV file-upload, and CSV visualization | Java, OSGi, CXF, JavaScript
 
 #### The Authoritative WIS Catalogue component (AWISC)
 
+##### Infrastructure
+Component | Task description | Core Technologies
+--|--|--
+Database | Insallation and configuration of the required Database storage on the target platform (user/schema creation) | MySQL
+Web Server | Installation and configuration of the Web Server component, and its pre-requisites | Core technologies: Java, Maven, Karaf
+
+##### Implementation
+Component | Task description | Core Technologies
+--|--|--
+Sitemap | Creation of sitemap | XML
+Web Crawler | Creation of the web-crawler service. This will be responsible to index target sites on a schedule, or on-demand | Java
+WebApp | Creation of the web-app that will handle user subscriptions, web-crawler control, notification management | Java, OSGi, CXF, JavaScript
 
 #### The Authoritative WIS Catalogue Real-time Notification component (AWISC-RTN)
+
+##### Infrastructure
+Component | Task description | Core Technologies
+--|--|--
+Message Queue | Installation and configuration of the Message Queue component, and its pre-requisites | RabbitMQ
