@@ -125,7 +125,7 @@ A: No.
 ## Software components
 
 ### Diagram
-([](edit this diagram) on draw.io)
+([edit this diagram](https://www.draw.io/#HOpenWIS%2Fdjibouti%2Fmaster%2Fdocs%2FOPP6-Software-components.xml) on draw.io)
 ![](docs/img/OPP6-Software-Components.png)
 
 ### Tasks
