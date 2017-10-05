@@ -4,10 +4,10 @@ For a background regarding OPP-6, please read the relevant [discussion on OPP-6]
 This repository contains documentation as well as different Proof of Concept implementations for OPP6.
 
 ## High-level flow diagram
-Presents a bird's eye view of the operations and basic data-flows envisaged for OPP-6. The main actors and actions are 
-identified as well as the main building blocks of the system. We are using draw.io to maintain the [high-level flow diagram](docs%2FOPP6-Flow-diagram.xml).
+Presents a bird's eye view of the operations and basic data-flows envisaged for OPP-6. The main actors and actions are identified as well as the main building blocks of the system:
 
-An exported version of the diagram in PNG is available next (note, this is manually exported, so it may not reflect the latest version of the diagram):
+_([edit this diagram](https://www.draw.io/#HOpenWIS%2Fdjibouti%2Fmaster%2Fdocs%2FOPP6-Flow-diagram.xml) in draw.io)_
+
 ![](docs/img/OPP6-Flow-diagram.png)
 
 ## PoC architectural specs
@@ -15,7 +15,7 @@ An exported version of the diagram in PNG is available next (note, this is manua
 ### Point 0 - General
 
 1. Q: Implementing security restrictions/checks will not be a target for the PoC. However, should we support some very basic user authentication? Regarding the calls in (P5) and (P6) we could have some basic, token-based authentication in place especially since (P14) will be deployed on public Internet.  
-A: Yes. Basic security is required. Discuss with UKMO to re-use part of infrastructure. Security will focus on users like Muktar and not end-users.
+A: Yes. Basic security is required. Discuss with UKMO to re-use part of infrastructure. Security will focus on users like Mouktar and not end-users.
 
 2. Q: Do we want commercial search engines to also crawl AWC?  
 A: Not at this point.
@@ -121,3 +121,30 @@ A: Yes, central.
 
 2. Q: Real-time notification are about the existance of data, or they disseminate the data itself as well?  
 A: No.
+
+## Software components
+
+### Diagram
+([](edit this diagram) on draw.io)
+![](docs/img/OPP6-Software-Components.png)
+
+### Tasks
+For the PoC we have identified three major components of the architecture:
+
+* The Local Dissemination Environment (LDE)
+* The Authoritative WIS Catalogue component (AWISC)
+* The Authoritative WIS Catalogue Real-time Notification component (AWISC-RTN)
+
+The PoC has very specific focus and will be largely created as a throw-away prototype. It is important to re-use infrastructure and services and not spend time in manual, complicated, one-off setups that require extra documentation. For this reason, we have opted to use Docker, so that we have access to its vast ecosystem of ready-made containers, providing the majority of the underlying components we will need for the PoC. Considering the PoC will be created in a distributed fashion by different teams of the Association, we also opt for using Docker Compose to allow easily reproducible installations across teams and environments.
+
+#### The Local Dissemination Environment (LDE)
+
+##### Task 1: 
+Description:  
+Core technologies:
+
+
+#### The Authoritative WIS Catalogue component (AWISC)
+
+
+#### The Authoritative WIS Catalogue Real-time Notification component (AWISC-RTN)
