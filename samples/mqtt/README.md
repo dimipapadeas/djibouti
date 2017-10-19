@@ -19,11 +19,13 @@ Build normally as
 `mvn clean install`
 
 After successful build to run Consumer (from the target folder):
+
 `owt-mqtt subscriber`
 
 > Press Ctrl + c to close
 
 To run publisher (from the target folder):
+
 `owt-mqtt publisher "<THE MESSAGE YOU WANT TO PUBLISH>"`
 
 >Note: The publisher sends one message per execution
@@ -48,10 +50,12 @@ Build normally as
 `mvn clean install`
 
 After successful build to run Consumer (from the target folder):
+
 `owt-mqttCamel subscriber`
 > Press Ctrl + c to close
 
 To run publisher (from the target folder):
+
 `owt-mqttCamel publisher "<THE MESSAGE YOU WANT TO PUBLISH>"`
 
 >Note: The publisher sends one message per execution.
