@@ -1,4 +1,4 @@
-# MQTT integration examples
+# MQTT Integration Examples
 
 ## 1. Run MQTT Mosquitto broker on a docker
 
