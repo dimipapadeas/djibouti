@@ -1,6 +1,6 @@
 # MQTT Integration Examples
 
-## 1. Run MQTT Mosquitto broker on a docker
+## 1. Run MQTT Mosquitto broker on Docker
 
 To load MQTT Mosquitto docker image just execute:
 
