@@ -30,7 +30,7 @@ WebApp | Creation of the web-app that will handle data dissemination and CSV vis
 ##### Infrastructure
 Component | Task description | Core Technologies
 --|--|--
-Database | Insallation and configuration of the required Database storage on the target platform (user/schema creation) | MySQL
+Database | Installation and configuration of the required Database storage on the target platform (user/schema creation) | MySQL, Elasticsearch
 Web Server | Installation and configuration of the Web Server component, and its pre-requisites | Java, Maven, Karaf
 
 ##### Implementation
