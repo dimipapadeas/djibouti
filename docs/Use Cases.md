@@ -1,4 +1,4 @@
-# OPP-6-WIS-Djibouti User Cases
+# OPP-6-WIS-Djibouti Use Cases
 
 ## Mouktar's use cases:
 
