@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <script type="application/ld+json">
+    {
+      "@context":"http://schema.org/",
+      "@type":"Dataset",
+      "name":"Miami Area Weather",
+      "description":"Weather data provided by the National Oceanic and Atmospheric Administration (NOAA) for the Miami area",
+      "url":"https://gis.ncdc.noaa.gov/miami-dataset-home-page",
+      "license":"https://creativecommons.org/licenses/by/4.0/",
+      "keywords":[
+        "NOAA > STATION > CODE > WBAN:12882",
+        "NOAA > STATION > CODE > WBAN:12839",
+        "NOAA > STATION > NAME > MIAMI OPA LOCKA AIRPORT FL US",
+        "NOAA > STATION > NAME > MIAMI INTERNATIONAL AIRPORT FL US",
+        "WEATHER > READINGS > HOURLY > SKY CONDITION",
+        "WEATHER > READINGS > HOURLY > TEMPERATURE > WET BULB > CELCIUS",
+        "WEATHER > READINGS > HOURLY > HUMIDITY > RELATIVE",
+        "WEATHER > READINGS > HOURLY > WIND > SPEED",
+        "WEATHER > READINGS > HOURLY > WIND > DIRECTION",
+        "WEATHER > READINGS > HOURLY > PRESSURE > SEA LEVEL"
+      ],
+      "creator":{
+         "@type":"Organization",
+         "url": "https://www.ncei.noaa.gov/",
+         "name":"OC/NOAA/NESDIS/NCEI > National Centers for Environmental Information, NESDIS, NOAA, U.S. Department of Commerce",
+         "contactPoint":{
+            "@type":"ContactPoint",
+            "contactType": "customer service",
+            "telephone":"+1-828-271-4800",
+            "email":"ncei.orders@noaa.gov"
+         }
+      },
+      "includedInDataCatalog":{
+         "@type":"DataCatalog",
+         "name":"data.gov"
+      },
+      "distribution":[
+         {
+            "@type":"DataDownload",
+            "encodingFormat":"CSV",
+            "contentUrl":"https://www.ncei.noaa.gov/orders/cdo/1115435.csv"
+         },
+         {
+            "@type":"DataDownload",
+            "encodingFormat":"XML",
+            "contentUrl":"https://www.ncei.noaa.gov/orders/cdo/download-file.xml"
+         }
+      ],
+      "temporalCoverage":"1948-01-01/2017-11-03",
+      "spatialCoverage":{
+         "@type":"Place",
+         "geo":{
+            "@type":"GeoShape",
+            "box":"25.927 -80.387 25.733 -80.094"
+         }
+      }
+    }
+
+    {
+      "wmo-codes":[
+        {
+          //SKY CONDITION
+          "@id":"http://codes.wmo.int/bufr4/b/02/179"
+        },
+        {
+          //TEMPERATURE > WET BULB
+          "@id":"http://codes.wmo.int/bufr4/codeflag/0-02-039/0"
+        },
+        {
+          //HUMIDITY > RELATIVE
+          "@id":"http://codes.wmo.int/bufr4/b/13/009"
+        },
+        {
+          //WIND > SPEED
+          "@id":"http://codes.wmo.int/bufr4/b/11/083"
+        },
+        {
+          //WIND > DIRECTION
+          "@id":"http://codes.wmo.int/bufr4/b/11/001"
+        },
+        {
+          //PRESSURE > SEA LEVEL
+          "@id":"http://codes.wmo.int/bufr4/b/10/051"
+        }        
+      ]
+    }
+    
+    </script>
+
+  <style type="text/css">
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      background: #E1E2E1;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    }
+
+    .header-top {
+      background: #29434e;
+      text-align: left;
+      padding: 0;
+      margin: 0;
+    }
+
+    .header-top-text {
+      display: inline-block;
+      margin: 0 10px;
+      color: #aaaaaa;
+      font-size: 13px;
+      padding: 6px 3px;
+    }
+
+    .header-top-text-active {
+      display: inline-block;
+      margin: 0 10px;
+      color: #cccccc;
+      border-bottom: 1px solid #cccccc;
+      font-size: 13px;
+      padding: 6px 3px;
+    }
+
+    .header-title {
+      background: #546e7a;
+      color: #ffffff;
+      font-size: 32px;
+      padding: 30px 40px;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    .content {
+      padding: 50px;
+    }
+
+    .box {
+      color: #29434e;
+      background: #F5F5F6;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+      padding: 0;
+      margin: 0;
+    }
+
+    .box a {
+      color: #29434e;
+    }
+
+    .box a: visited {
+      color: #29434e;
+    }
+
+    .box-title {
+      padding: 20px 20px 12px;
+      font-size: 24px;
+      color: #29434e;
+      border-bottom: 1px solid #cccccc;
+    }
+
+    .box-subtitle {
+      padding: 10px 0;
+      font-size: 20px;
+      color: #29434e;
+    }
+
+    .box-content {
+      padding: 20px;
+      border-bottom: 1px solid #cccccc;
+    }
+
+    .box-content-left {
+      display: inline-block;
+      width: 44%;
+      margin-bottom: 10px;
+    }
+
+    .box-content-left img {
+      width: 160px;
+      height: 160px;
+      border: 1px solid #cccccc;
+    }
+
+    .box-content-right {
+      display: inline-block;
+      width: auto;
+      margin-bottom: 10px;
+    }
+
+    .box-content-cell {
+      display: inline-block;
+      padding: 8px 0;
+      vertical-align: top;
+    }
+
+    .box-content-row {
+      padding: 4px 0;
+    }
+
+    .box-content-row span {
+      display: inline-block;
+      width: 130px;
+    }
+
+    .box-content-divider {
+      display: inline-block;
+      width: 10%;
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <div class="header-top">
+    <div style="margin-left:30px">
+      <div class="header-top-text">Home Page</div>
+      <div class="header-top-text-active">Datasets</div>
+    </div>
+  </div>
+  <div class="header-title">National Oceanic and Atmospheric Administration</div>
+  <div class="content">
+    <div class="box">
+      <div class="box-title">Miami Metropolitan Area Weather</div>
+      <div class="box-content">
+        <div class="box-content-left">
+          <div class="box-subtitle">Location Information</div>
+          <div class="box-content-cell" style="margin-right:20px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Miamiurban.gif">
+          </div>
+          <div class="box-content-cell">
+            <div class="box-content-row">
+              <span>Country:</span> United States of America</div>
+            <div class="box-content-row">
+              <span>State:</span> Florida</div>
+            <div class="box-content-row">
+              <span>Divisions:</span> Miami, Fort Lauderdale, West Palm Beach</div>
+            <div class="box-content-row">
+              <span>Area Codes:</span> 305, 786, 954, 754, 561</div>
+            <div class="box-content-row">
+              <span>Climate:</span> Tropical</div>
+            <div class="box-content-row">
+              <span>References:</span>
+              <a href="https://en.wikipedia.org/wiki/Miami_metropolitan_area">https://en.wikipedia.org/wiki/Miami_metropolitan_area</a>
+            </div>
+          </div>
+        </div>
+        <div class="box-content-divider"></div>
+        <div class="box-content-right">
+          <div class="box-subtitle">Dataset Information</div>
+          <div class="box-content-cell">
+            <div class="box-content-row">
+              <span>Name:</span> Miami metropolitan area weather dataset</div>
+            <div class="box-content-row">
+              <span>Description:</span> The dataset provides weather readings from the Miami metropolitan area</div>
+            <div class="box-content-row">
+              <span>Period:</span> 1948/01/01 - Now</div>
+            <div class="box-content-row">
+              <span>License:</span>
+              <a href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a>
+            </div>
+            <div class="box-content-row">
+              <span>Reading Types:</span> Temperature, Humidity, Wind, Pressure</div>
+            <div class="box-content-row">
+              <span>NOAA Stations:</span> WBAN:12882, WBAN:12839</div>
+          </div>
+        </div>
+      </div>
+      <div class="box-content">
+        <div class="box-subtitle">Distribution Information</div>
+        <div class="box-content-cell">
+          <div class="box-content-row">
+            <span>Data Format:</span> CSV</div>
+          <div class="box-content-row">
+            <span>Download Link:</span>
+            <a target="_blank" href="https://www.ncei.noaa.gov/orders/cdo/1115435.csv">https://www.ncei.noaa.gov/orders/cdo/1115435.csv</a>
+          </div>
+          <div class="box-content-row">
+            <span>AWS Queue:</span> arn:aws:sns:us-east-1:123901341784:SEDataQueue</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
