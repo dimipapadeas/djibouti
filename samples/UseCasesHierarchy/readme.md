@@ -1,2 +1,2 @@
 # Use Cases Hierarchy
-![](\img\UCS_hierarchy.png)
+![](img/UCS_hierarchy.png)
