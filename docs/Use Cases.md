@@ -3,8 +3,8 @@
 ## Mouktar's use cases:
 
 [UCS-001: Upload new datasets](https://github.com/OpenWIS/djibouti/issues/1)  
-UCS-002: Create a Python script to check for 3SD for automatic detection of "bad data" from incoming sources.  
-UCS-003: Use the local web application to automatically generate/edit most of HTML content of the dataset page
+UCS-002: Create a Python script to check for 3SD for automatic detection of "bad data" from incoming sources  
+UCS-003: Use the local web application to automatically generate/edit most of HTML content of the dataset page  
 UCS-004: The dataset's HTML page automatically generates CSV visualization in the form of a graph  
 UCS-005: Enhances HTML pages with JSON-LD information related to Google and AWISC  
 UCS-006: Register site-map with AWISC  
