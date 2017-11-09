@@ -3,10 +3,10 @@
 ## Mouktar's use cases:
 
 [UCS-001: Upload new datasets](https://github.com/OpenWIS/djibouti/issues/1)  
-UCS-002: Automatic Weather Station quality control  
-UCS-003: Use the local web application to automatically generate/edit most of HTML content of the dataset page  
+[UCS-002: Automatic Weather Station quality control](https://github.com/OpenWIS/djibouti/issues/3)  
+[UCS-003: Dataset HTML page content management](https://github.com/OpenWIS/djibouti/issues/4)  
 UCS-004: The dataset's HTML page automatically generates CSV visualization in the form of a graph  
-UCS-005: Enhances HTML pages with JSON-LD information related to Google and AWISC  
+~~UCS-005: MERGED IN UCS-3 (was: Enhances HTML pages with JSON-LD information related to Google and AWISC)~~  
 UCS-006: Register site-map with AWISC  
 
 ## Mariam's use cases:  
