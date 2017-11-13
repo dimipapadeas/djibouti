@@ -12,7 +12,7 @@ UCS-006: Register site-map with AWISC
 ## Mariam's use cases:  
 [UCS-007: Observation dataset queue discovery and subscription (Google/AWISC)](https://github.com/OpenWIS/djibouti/issues/5)  
 ~~UCS-008:~~ Merged in UCS-7 (was: Subscribe to weather observation dataset queues)  
-[UCS-009: Request re-send of missed notifications](https://github.com/OpenWIS/djibouti/issues/7)  
+[UCS-009: Re-transmission of undelivered notifications](https://github.com/OpenWIS/djibouti/issues/7)  
 
 ## Dave's use cases:  
 UCS-010: Search for weather observations registered in AWISC via the AWISC web application  
