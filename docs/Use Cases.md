@@ -31,7 +31,7 @@ UCS-016: Create `Automatic Weather Station` queues
 UCS-017: Upload fresh data automatically via web application  
 
 ## Regional data sharing hub's use cases (RDSH):  
-UCS-018: Provide reliable & highly-available pub-sub messaging infrastructure  
+UCS-018: Regional Data Sharing Hub reliability & high availability(https://github.com/OpenWIS/djibouti/issues/10)  
 
 ## Authoritative WIS Catalogue's use cases (AWISC):  
 UCS-019: Maintain a catalogue of official WIS datasets  
