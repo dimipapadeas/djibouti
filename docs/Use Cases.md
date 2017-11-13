@@ -6,12 +6,12 @@
 [UCS-002: Automatic Weather Station quality control](https://github.com/OpenWIS/djibouti/issues/3)  
 [UCS-003: Dataset HTML page content management](https://github.com/OpenWIS/djibouti/issues/4)  
 UCS-004: The dataset's HTML page automatically generates CSV visualization in the form of a graph  
-~~UCS-005: MERGED IN UCS-3 (was: Enhances HTML pages with JSON-LD information related to Google and AWISC)~~  
+~~UCS-005:~~ Merged in UCS-3 (was: Enhances HTML pages with JSON-LD information related to Google and AWISC)  
 UCS-006: Register site-map with AWISC  
 
 ## Mariam's use cases:  
-[UCS-007: Observation dataset queue discovery (Google/AWISC)](https://github.com/OpenWIS/djibouti/issues/5)  
-UCS-008: Subscribe to weather observation dataset queues  
+[UCS-007: Observation dataset queue discovery and subscription (Google/AWISC)](https://github.com/OpenWIS/djibouti/issues/5)  
+~~UCS-008:~~ Merged in UCS-7 (was: Subscribe to weather observation dataset queues)  
 UCS-009: Request re-send of missed notifications  
 
 ## Dave's use cases:  
