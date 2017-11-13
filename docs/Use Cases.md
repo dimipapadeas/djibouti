@@ -22,8 +22,8 @@ UCS-011: Search for weather observations registered in AWISC via the AWISC web s
 UCS-012: Discover observation data via Google Search  
 
 ## Omar's use cases:  
-[UCS-013: Dataset dissemination queue creation](https://github.com/OpenWIS/djibouti/issues/8)  
-UCS-014: Dataset dissemination queue monitoring  
+[UCS-013: Dataset queue creation](https://github.com/OpenWIS/djibouti/issues/8)  
+[UCS-014: Dataset queue monitoring](https://github.com/OpenWIS/djibouti/issues/9)  
 UCS-015: Establish federated authentication via a trusted Identity Provider  
 UCS-016: Create `Automatic Weather Station` queues  
 
