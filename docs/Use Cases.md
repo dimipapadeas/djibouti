@@ -10,7 +10,7 @@ UCS-004: The dataset's HTML page automatically generates CSV visualization in th
 ~~UCS-006:~~ Merged in UCS-19 (was: Register site-map with AWISC)  
 
 ## Mariam's use cases:  
-[UCS-007: Observation dataset queue discovery and subscription (Google/AWISC)](https://github.com/OpenWIS/djibouti/issues/5)  
+[UCS-007: Observation dataset queue discovery and subscription using Google search](https://github.com/OpenWIS/djibouti/issues/5)  
 ~~UCS-008:~~ Merged in UCS-7 (was: Subscribe to weather observation dataset queues)  
 [UCS-009: Re-transmission of undelivered notifications](https://github.com/OpenWIS/djibouti/issues/7)  
 [UCS-021: Observation dataset queue discovery and subscription using the AWISC search page](https://github.com/OpenWIS/djibouti/issues/12)  
