@@ -34,11 +34,11 @@ UCS-017: Upload fresh data automatically via web application
 [UCS-018: Regional Data Sharing Hub reliability & high availability](https://github.com/OpenWIS/djibouti/issues/10)  
 
 ## Authoritative WIS Catalogue's use cases (AWISC):  
-UCS-019: Maintain a catalogue of official WIS datasets  
-UCS-020: Periodically crawl registered pages and update internal index  
-UCS-021: Provide a dataset search page  
-UCS-022: Provide a dataset search (REST) API  
-UCS-023: Has its site-map registered in Google search  
+[UCS-019: Maintain an Authoritative WIS Catalogue](https://github.com/OpenWIS/djibouti/issues/11)  
+UCS-020: Dataset page crawling and indexing  
+UCS-021: AWISC dataset HTML search page  
+UCS-022: AWISC dataset search Web-API  
+UCS-023: AWISC Google search site-map registration   
 
 ---
 
