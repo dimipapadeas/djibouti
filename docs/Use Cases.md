@@ -38,7 +38,7 @@ UCS-017: Upload fresh data automatically via web application
 [UCS-019: Maintain an Authoritative WIS Catalogue](https://github.com/OpenWIS/djibouti/issues/11)  
 [UCS-020: Dataset page crawling and indexing](https://github.com/OpenWIS/djibouti/issues/13)  
 UCS-022: AWISC dataset search Web-API  
-UCS-023: AWISC Google search site-map registration   
+[UCS-023: Search AWISC through Google](https://github.com/OpenWIS/djibouti/issues/14)  
 
 ---
 
