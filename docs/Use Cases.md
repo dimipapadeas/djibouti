@@ -13,6 +13,7 @@ UCS-004: The dataset's HTML page automatically generates CSV visualization in th
 [UCS-007: Observation dataset queue discovery and subscription (Google/AWISC)](https://github.com/OpenWIS/djibouti/issues/5)  
 ~~UCS-008:~~ Merged in UCS-7 (was: Subscribe to weather observation dataset queues)  
 [UCS-009: Re-transmission of undelivered notifications](https://github.com/OpenWIS/djibouti/issues/7)  
+[UCS-021: Observation dataset queue discovery and subscription using the AWISC search page](https://github.com/OpenWIS/djibouti/issues/12)  
 
 ## Dave's use cases:  
 UCS-010: Search for weather observations registered in AWISC via the AWISC web application  
@@ -36,7 +37,6 @@ UCS-017: Upload fresh data automatically via web application
 ## Authoritative WIS Catalogue's use cases (AWISC):  
 [UCS-019: Maintain an Authoritative WIS Catalogue](https://github.com/OpenWIS/djibouti/issues/11)  
 UCS-020: Dataset page crawling and indexing  
-UCS-021: AWISC dataset HTML search page  
 UCS-022: AWISC dataset search Web-API  
 UCS-023: AWISC Google search site-map registration   
 
