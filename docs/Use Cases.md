@@ -7,7 +7,7 @@
 [UCS-003: Dataset HTML page content management](https://github.com/OpenWIS/djibouti/issues/4)  
 UCS-004: The dataset's HTML page automatically generates CSV visualization in the form of a graph  
 ~~UCS-005:~~ Merged in UCS-3 (was: Enhances HTML pages with JSON-LD information related to Google and AWISC)  
-UCS-006: Register site-map with AWISC  
+~~UCS-006:~~ Merged in UCS-19 (was: Register site-map with AWISC)  
 
 ## Mariam's use cases:  
 [UCS-007: Observation dataset queue discovery and subscription (Google/AWISC)](https://github.com/OpenWIS/djibouti/issues/5)  
