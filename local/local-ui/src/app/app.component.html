@@ -1,50 +1,71 @@
-<html>
-
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>3 Column Layout</title>
-
-  <script type="text/javascript">
-    //...
-  </script>
-
-</head>
-
-<body>
-
-  <mat-toolbar #toolbar class="header">
-    <p>Header...</p>
+<mat-toolbar #toolbar class="header">
+  <mat-toolbar-row class="header-top">
+  </mat-toolbar-row>
+  <mat-toolbar-row class="header">
+    <mat-icon class="menu-icon" (click)="sidenav.toggle()">menu</mat-icon>
+    <p>Local Web Application</p>
     <span class="ui-spacer"></span>
     <mat-icon class="ui-icon">favorite</mat-icon>
     <mat-icon class="ui-icon">delete</mat-icon>
-  </mat-toolbar>
+  </mat-toolbar-row>
+</mat-toolbar>
 
-  <mat-sidenav-container class="ui-container">
-    <mat-sidenav #sidenav mode="side" opened="true" class="nav">
 
-      <ul>
-        <li><a href="#">Link 1</a></li>
-        <li><a href="#">Link 2</a></li>
-        <li><a href="#">Link 3</a></li>
-        <li><a href="#">Link 4</a></li>
-        <li><a href="#">Link 5</a></li>
-      </ul>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="side" opened="true" class="nav">
+    <ul>
 
-    </mat-sidenav>
+      <li>
+        <a href="#">Item 1</a>
+      </li>
+      <!-- <li class="nav-item"><a class="nav-link" routerLink="home">Home</a></li> -->
 
-    <div class="main-content">
+      <li>
+        <a href="#">Item 2</a>
+      </li>
+      <!-- <li class="nav-item"><a class="nav-link" routerLink="submit">Submit</a></li> -->
 
-      <ul>
-        <h3>Content..</h3>
-      </ul>
+      <li>
+        <a href="#">Item 3</a>
+        <!-- <li class="nav-item"><a class="nav-link" routerLink="courses">Courses</a></li> -->
+      </li>
+      <li>
+        <a href="#">Item 4</a>
+      </li>
+      <li>
+        <a href="#">Item 5</a>
+      </li>
+    </ul>
+  </mat-sidenav>
+
+
+  <div class="main-content">
+
+    <div class="box">
+      <mat-toolbar #componentToolbar class="header-small">
+        <p>Insert Weather Metadata</p>
+        <span class="ui-spacer"></span>
+        <mat-icon class="ui-icon">backup</mat-icon>
+        <mat-icon class="ui-icon">donut_large</mat-icon>
+      </mat-toolbar>
+      <div style="padding:4em;">
+
+
+        <!-- <router-outlet></router-outlet> -->
+
+        <app-submit-form></app-submit-form>
+
+      </div>
     </div>
-  </mat-sidenav-container>
-  <footer class="footer">
-    <div layout="row" layout-align="center center">
-      <div class="footer-message">eurodyn</div>
 
-    </div>
-  </footer>
-</body>
+  </div>
+</mat-sidenav-container>
 
-</html>
+
+<footer class="footer">
+  <div layout="row" layout-align="center center">
+    <div class="footer-message">&copy; 2017 - 2018 OpenWIS</div>
+
+  </div>
+
+</footer>
